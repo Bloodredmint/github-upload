@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<style>
+
+body{
+  background-color: cyan;
+  text-align: center;
+}
+.form-body{
+  background-color: white;
+}
+.section{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.labels{
+  justify-self:end;
+}
+.input{
+  justify-self:start;
+}
+</style>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+  <h1 id="title">Survey form</h1>
+  <div class="form-body">
+    <p id="description">Some text</p>
+    <div class="form">
+      <form id="survey-form">
+        <div class="section" id="info">
+          <div class="labels">
+            <label id="name-label">* Name:</label>
+          </div>
+          <div class="input">
+            <input id="name" type="text" name="name" placeholder="Enter your name">
+          </div>
+          <div class="labels">
+            <label id="email-label">* Email:</label>
+          </div>
+          <div class="input">
+            <input id="name" type="email" name="email" placeholder="Enter your Email">
+          </div>
+          <div class="labels">
+            <label id="number-label">Age:</label>
+          </div>
+          <div class="input">
+            <input id="name" type="number" name="number" placeholder="Enter your age">
+          </div>
+        </div>
+        <div class="section" id="dropdown">
+          <div class="labels">
+            <label>What style of player are you?</label>
+          </div>
+          <div class="input">
+            <select>
+              <option>Please select one</option>
+              <option>Survival</option>
+              <option>Creative</option>
+              <option>Adventure</option>
+              <option>Online</option>
+              <option>Hardcore</option>
+            </select>
+          </div>
+        </div>
+        <div class="section" id="radio">
+          <div class="labels">
+            <label>Which edition do you play?</label>
+          </div>
+          <div class="section">
+            <div class="labels">
+              <label>Bedrock:</label>
+            </div>
+            <div class="input">
+              <input type="radio">
+            </div>
+            <div class="labels" >
+              <label>Java:</label>
+            </div>
+            <div class="input">
+              <input type="radio">
+            </div>
+            <div class="labels" >
+              <label>Legacy:</label>
+            </div>
+            <div class="input">
+              <input type="radio">
+            </div>
+          </div>
+        </div>
+        <div class="section" id="drop">
+          <div class="labels">
+            <label>What is your weapon of choice?</label>
+          </div>
+          <div class="input">
+            <select>
+              <option>Please select one</option>
+              <option>Sword</option>
+              <option>Axe</option>
+              <option>Pickaxe</option>
+              <option>Spade</option>
+              <option>Bow + Arrow</option>
+              <option>Potions</option>
+              <option>Snowball</option>
+              <option>Trident</option>
+            </select>
+          </div>
+        </div>
+        <div class="section" id="choices">
+          <div class="labels">
+            <label>What is your preferred Biome?</label>
+          </div>
+          <div class="section">
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>The End</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>The Nether</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Forest</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Desert</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Hills</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Beach</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Snow</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Jungle</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Plains</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Swamp</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Underwater</label>
+            </div>
+            <div class="input">
+              <input type="checkbox">
+            </div>
+            <div class="labels">
+              <label>Other:<input type="textarea"></label>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="comments">
+          <div class="labels">
+            <label>Any Comments?</label>
+          </div>
+          <div class="input">
+            <input type="textarea">
+          </div>
+        </div>
+        <div class="submit" id="submit">
+          <input type="submit">
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

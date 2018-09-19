@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<style>
+
+body{
+  background-image: url("Dirt.jpg");
+  text-align: center;
+  font-family: 'Press Start 2P' ,cursive;
+  -webkit-text-fill-color:white;
+  -webkit-text-stroke-width:0.5px;
+  -webkit-text-stroke-color:black;
+}
+ul{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: start;
+  padding:0px;
+}
+textarea{
+  width:320px;
+  height:75px;
+}
+.form-body{
+  background-image:url("stone.png");
+  border:solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+.section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border:solid;
+  border-radius: 10px;
+  border-width: thin;
+  border-color: black;
+  padding:10px;
+  margin:5px;
+}
+.labels{
+  justify-self:end;
+  padding: 10px;
+  text-align: right;
+}
+.input{
+  justify-self:start;
+  padding:10px;
+}
+#info{
+  background-image: url("coal-ore.jpg");
+  background-size: contain;
+  color:#d2d4d8;
+}
+#number{
+  width:125px;
+}
+#dropdown{
+
+
+}
+#radio{
+  background-image: url("iron-ore.png");
+  background-size: contain;
+  color:#2c2e30;
+}
+#drop{
+  background-image:url("gold-3.jpeg");
+  background-size: contain;
+}
+#choices{
+  background-image: url("stone.png")
+}
+#other{
+  width:175px
+}
+#checks{
+  display: grid;
+  grid-template-rows:repeat(11,auto);
+  justify-items:start;
+}
+#comments{
+  background-image: url("redstone.png");
+  background-size: contain;
+}
+#submit{
+  width: 100px;
+  height:25px;
+  background-image: url(diamond.jpeg);
+  background-size: contain;
+}
+</style>
+
+<body>
+  <h1 id="title">Survey form</h1>
+  <div class="form-body">
+    <p id="description">Please tell us how you like to play Minecraft</p>
+    <div class="form">
+      <form id="survey-form">
+        <div class="section" id="info">
+          <div class="labels">
+            <label id="name-label">* Name:</label>
+          </div>
+          <div class="input">
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="labels">
+            <label id="email-label">* Email:</label>
+          </div>
+          <div class="input">
+            <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+          </div>
+          <div class="labels">
+            <label id="number-label">Age:</label>
+          </div>
+          <div class="input">
+            <input id="number" type="number" name="number" placeholder="Enter your age" min=7 max=50>
+          </div>
+        </div>
+        <div class="section" id="dropdown">
+          <div class="labels">
+            <label>What style of player are you?</label>
+          </div>
+          <div class="input">
+            <select>
+              <option selected disabled>Please select one</option>
+              <option>Survival</option>
+              <option>Creative</option>
+              <option>Adventure</option>
+              <option>Online</option>
+              <option>Hardcore</option>
+            </select>
+          </div>
+        </div>
+        <div class="section" id="radio">
+          <div class="labels">
+            <label>Which edition do you play?</label>
+          </div>
+          <div class="input" id="radios">
+            <ul style="list-style:none;">
+              <li><label><input type="radio" name="radio-btn" value="1"> Bedrock</label></li>
+              <li><label><input type="radio" name="radio-btn" value="2"> Java</label></li>
+              <li><label><input type="radio" name="radio-btn" value="3"> Legacy</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="section" id="drop">
+          <div class="labels">
+            <label>What is your weapon of choice?</label>
+          </div>
+          <div class="input">
+            <select>
+              <option selected disabled>Please select one</option>
+              <option>Sword</option>
+              <option>Axe</option>
+              <option>Pickaxe</option>
+              <option>Spade</option>
+              <option>Bow + Arrow</option>
+              <option>Potions</option>
+              <option>Snowball</option>
+              <option>Trident</option>
+            </select>
+          </div>
+        </div>
+        <div class="section" id="choices">
+          <div class="labels">
+            <label>What is your prefered Biome?</label>
+          </div>
+          <div class="input" id="checks">
+            <label><input type="checkbox" value="1"> The End</label>
+            <label><input type="checkbox" value="2"> The Nether</label>
+            <label><input type="checkbox" value="3"> Forest</label>
+            <label><input type="checkbox" value="4"> Desert</label>
+            <label><input type="checkbox" value="5"> Hills</label>
+            <label><input type="checkbox" value="6"> Beach</label>
+            <label><input type="checkbox" value="7"> Snow</label>
+            <label><input type="checkbox" value="8"> Jungle</label>
+            <label><input type="checkbox" value="9"> Plains</label>
+            <label><input type="checkbox" value="10"> Swamp</label>
+            <label><input type="checkbox" value="11"> Underwater</label>
+            <label><input type="checkbox" value="12"> Other: <input type="text" id="other"></label>
+          </div>
+        </div>
+        <div class="section" id="comments">
+          <div class="labels">
+            <label>Any Comments?</label>
+          </div>
+          <div class="input">
+            <textarea></textarea>
+          </div>
+        </div>
+        <button id="submit" type="submit" value="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+
+</html>
